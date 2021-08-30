@@ -10,20 +10,6 @@ cars <- mtcars %>% rownames()
 #### Test grid ideas ####
 strings <- cars
 
-# x <- c(1:length(strings))
-
-# df <- data.frame(strings, x, y = x)
-
-# ggplot(df, aes(x, y)) +
-#   geom_tile() +
-#   geom_text(aes(label = strings)) +
-#   labs(x = "", y = "")
-
-## Proof of concept labelling grids
-## Have to think about how to divide up grid positions in x and y so we get nice even output.
-
-# Use gt?
-
 # Split up df
 
 df <- data.frame(strings)
@@ -46,6 +32,14 @@ for(i in 1:length(grid_list)){
 
 }
 
-grid_df %>% gt()
+grid_df %>%
+  gt() %>%
+  tab_options(
+    column_labels.hidden = TRUE,
+    data_row.padding = 10
+  ) %>%
+  cols_width(
+    everything() ~ px(100)
+  )
 
 
