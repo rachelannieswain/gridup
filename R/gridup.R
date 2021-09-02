@@ -1,6 +1,16 @@
 #### To present a vector of strings neatly and concisely ####
 
-
+#' Display strings concisely in a figure
+#'
+#' @param strings A vector of strings. Note: short strings are most effective.
+#' @param output_typeThe Desired format of the output. See documentation for examples. Either "checkerboard" or "grid".
+#' Defaults to "grid".
+#' @param bg_colour Desired feature colour for the figure. Use html colour codes or hex codes. E.g. "Aqua" or "#00FFFF".
+#'
+#' @return The figure - a gt table.
+#' @export
+#'
+#' @examples
 grid_up <- function(strings, output_type = "grid", bg_colour = "gray90") {
 
   # Split up df
