@@ -12,6 +12,9 @@ LazyData: true
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
 Imports: 
-    magrittr
+    magrittr,
+    ggplot2,
+    dplyr,
+    gt
 Suggests: 
     testthat
