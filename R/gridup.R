@@ -44,6 +44,8 @@ grid_up <- function(strings, output_type = "grid", bg_colour = "gray90") {
 
 
   #### gt output
+  library(gt)
+
   if(output_type == "checkerboard") {
 
     ## checkerboard

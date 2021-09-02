@@ -18,37 +18,39 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of gridup is to ...
+The goal of gridup is to quickly and easily present a vector of strings in a visual manner. When writing reports we may need to present a large number of strings in our document, for example, a large number of keywords used in a database search, or a list of business names. We can paste them into our document separated by commas or in a bullet point list, but if the list is large, this becomes impractical and visually unappealing. 
+
+The sole function of grid up is to neatly squash your strings together into a grid figure that can be easily inserted into documentation. 
 
 ## Installation
 
-You can install the released version of gridup from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of gridup from GitHub with:
 
 ``` r
-install.packages("gridup")
+remotes::install_github("rachelannieswain/gridup")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Usage
 
 ```{r example}
 library(gridup)
-## basic example code
+
+# Your vector of strings
+cars <- mtcars %>% rownames()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
+### Grid layout
+```{r grid}
+gridup::grid_up(strings = cars, output_type = "grid")
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+### Checkerboard layout
+```{r checkerboard}
+gridup::grid_up(strings = cars, output_type = "checkerboard")
 ```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+### Changing background colour
+```{r}
+gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "goldenrod")
+```
+
