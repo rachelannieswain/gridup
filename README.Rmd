@@ -40,17 +40,21 @@ cars <- mtcars %>% rownames()
 ```
 
 ### Grid layout
-```{r grid}
-gridup::grid_up(strings = cars, output_type = "grid")
+```{r grid, warning=FALSE, message=FALSE}
+grid_output <- gridup::grid_up(strings = cars, output_type = "grid")
+
+grid_output
 ```
 
 ### Checkerboard layout
-```{r checkerboard}
-gridup::grid_up(strings = cars, output_type = "checkerboard")
+```{r checkerboard, warning=FALSE, message=FALSE}
+checkerboard_output <- gridup::grid_up(strings = cars, output_type = "checkerboard")
+
+checkerboard_output
 ```
 
 ### Changing background colour
-```{r}
-gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "goldenrod")
+```{r colours, warning=FALSE, message=FALSE}
+gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "seagreen")
 ```
 

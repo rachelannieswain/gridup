@@ -37,25 +37,18 @@ cars <- mtcars %>% rownames()
 ### Grid layout
 
 ``` r
-gridup::grid_up(strings = cars, output_type = "grid")
-#> New names:
-#> * strings -> strings...1
-#> * strings -> strings...2
-#> New names:
-#> * strings -> strings...3
-#> New names:
-#> * strings -> strings...4
-#> New names:
-#> * strings -> strings...5
+grid_output <- gridup::grid_up(strings = cars, output_type = "grid")
+
+grid_output
 ```
 
-<div id="eojwufiwvn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bfvsdusaeo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#eojwufiwvn .gt_table {
+#bfvsdusaeo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -80,7 +73,7 @@ html {
   border-left-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_heading {
+#bfvsdusaeo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -92,7 +85,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_title {
+#bfvsdusaeo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -102,7 +95,7 @@ html {
   border-bottom-width: 0;
 }
 
-#eojwufiwvn .gt_subtitle {
+#bfvsdusaeo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -112,13 +105,13 @@ html {
   border-top-width: 0;
 }
 
-#eojwufiwvn .gt_bottom_border {
+#bfvsdusaeo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_col_headings {
+#bfvsdusaeo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -133,7 +126,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_col_heading {
+#bfvsdusaeo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -153,7 +146,7 @@ html {
   overflow-x: hidden;
 }
 
-#eojwufiwvn .gt_column_spanner_outer {
+#bfvsdusaeo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -165,15 +158,15 @@ html {
   padding-right: 4px;
 }
 
-#eojwufiwvn .gt_column_spanner_outer:first-child {
+#bfvsdusaeo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#eojwufiwvn .gt_column_spanner_outer:last-child {
+#bfvsdusaeo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#eojwufiwvn .gt_column_spanner {
+#bfvsdusaeo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -185,7 +178,7 @@ html {
   width: 100%;
 }
 
-#eojwufiwvn .gt_group_heading {
+#bfvsdusaeo .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -207,7 +200,7 @@ html {
   vertical-align: middle;
 }
 
-#eojwufiwvn .gt_empty_group_heading {
+#bfvsdusaeo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -222,15 +215,15 @@ html {
   vertical-align: middle;
 }
 
-#eojwufiwvn .gt_from_md > :first-child {
+#bfvsdusaeo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eojwufiwvn .gt_from_md > :last-child {
+#bfvsdusaeo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eojwufiwvn .gt_row {
+#bfvsdusaeo .gt_row {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 5px;
@@ -249,7 +242,7 @@ html {
   overflow-x: hidden;
 }
 
-#eojwufiwvn .gt_stub {
+#bfvsdusaeo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -261,7 +254,7 @@ html {
   padding-left: 12px;
 }
 
-#eojwufiwvn .gt_summary_row {
+#bfvsdusaeo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -271,7 +264,7 @@ html {
   padding-right: 5px;
 }
 
-#eojwufiwvn .gt_first_summary_row {
+#bfvsdusaeo .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -281,7 +274,7 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_grand_summary_row {
+#bfvsdusaeo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -291,7 +284,7 @@ html {
   padding-right: 5px;
 }
 
-#eojwufiwvn .gt_first_grand_summary_row {
+#bfvsdusaeo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -301,11 +294,11 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_striped {
+#bfvsdusaeo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#eojwufiwvn .gt_table_body {
+#bfvsdusaeo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -314,7 +307,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_footnotes {
+#bfvsdusaeo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -328,13 +321,13 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_footnote {
+#bfvsdusaeo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#eojwufiwvn .gt_sourcenotes {
+#bfvsdusaeo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -348,41 +341,41 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#eojwufiwvn .gt_sourcenote {
+#bfvsdusaeo .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#eojwufiwvn .gt_left {
+#bfvsdusaeo .gt_left {
   text-align: left;
 }
 
-#eojwufiwvn .gt_center {
+#bfvsdusaeo .gt_center {
   text-align: center;
 }
 
-#eojwufiwvn .gt_right {
+#bfvsdusaeo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eojwufiwvn .gt_font_normal {
+#bfvsdusaeo .gt_font_normal {
   font-weight: normal;
 }
 
-#eojwufiwvn .gt_font_bold {
+#bfvsdusaeo .gt_font_bold {
   font-weight: bold;
 }
 
-#eojwufiwvn .gt_font_italic {
+#bfvsdusaeo .gt_font_italic {
   font-style: italic;
 }
 
-#eojwufiwvn .gt_super {
+#bfvsdusaeo .gt_super {
   font-size: 65%;
 }
 
-#eojwufiwvn .gt_footnote_marks {
+#bfvsdusaeo .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -443,25 +436,18 @@ html {
 ### Checkerboard layout
 
 ``` r
-gridup::grid_up(strings = cars, output_type = "checkerboard")
-#> New names:
-#> * strings -> strings...1
-#> * strings -> strings...2
-#> New names:
-#> * strings -> strings...3
-#> New names:
-#> * strings -> strings...4
-#> New names:
-#> * strings -> strings...5
+checkerboard_output <- gridup::grid_up(strings = cars, output_type = "checkerboard")
+
+checkerboard_output
 ```
 
-<div id="rnyfyynape" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vrhagoxrth" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rnyfyynape .gt_table {
+#vrhagoxrth .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -486,7 +472,7 @@ html {
   border-left-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_heading {
+#vrhagoxrth .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -498,7 +484,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_title {
+#vrhagoxrth .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -508,7 +494,7 @@ html {
   border-bottom-width: 0;
 }
 
-#rnyfyynape .gt_subtitle {
+#vrhagoxrth .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -518,13 +504,13 @@ html {
   border-top-width: 0;
 }
 
-#rnyfyynape .gt_bottom_border {
+#vrhagoxrth .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_col_headings {
+#vrhagoxrth .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -539,7 +525,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_col_heading {
+#vrhagoxrth .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -559,7 +545,7 @@ html {
   overflow-x: hidden;
 }
 
-#rnyfyynape .gt_column_spanner_outer {
+#vrhagoxrth .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -571,15 +557,15 @@ html {
   padding-right: 4px;
 }
 
-#rnyfyynape .gt_column_spanner_outer:first-child {
+#vrhagoxrth .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rnyfyynape .gt_column_spanner_outer:last-child {
+#vrhagoxrth .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rnyfyynape .gt_column_spanner {
+#vrhagoxrth .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -591,7 +577,7 @@ html {
   width: 100%;
 }
 
-#rnyfyynape .gt_group_heading {
+#vrhagoxrth .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -613,7 +599,7 @@ html {
   vertical-align: middle;
 }
 
-#rnyfyynape .gt_empty_group_heading {
+#vrhagoxrth .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -628,15 +614,15 @@ html {
   vertical-align: middle;
 }
 
-#rnyfyynape .gt_from_md > :first-child {
+#vrhagoxrth .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rnyfyynape .gt_from_md > :last-child {
+#vrhagoxrth .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rnyfyynape .gt_row {
+#vrhagoxrth .gt_row {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 5px;
@@ -655,7 +641,7 @@ html {
   overflow-x: hidden;
 }
 
-#rnyfyynape .gt_stub {
+#vrhagoxrth .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -667,7 +653,7 @@ html {
   padding-left: 12px;
 }
 
-#rnyfyynape .gt_summary_row {
+#vrhagoxrth .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -677,7 +663,7 @@ html {
   padding-right: 5px;
 }
 
-#rnyfyynape .gt_first_summary_row {
+#vrhagoxrth .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -687,7 +673,7 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_grand_summary_row {
+#vrhagoxrth .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -697,7 +683,7 @@ html {
   padding-right: 5px;
 }
 
-#rnyfyynape .gt_first_grand_summary_row {
+#vrhagoxrth .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -707,11 +693,11 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_striped {
+#vrhagoxrth .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rnyfyynape .gt_table_body {
+#vrhagoxrth .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -720,7 +706,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_footnotes {
+#vrhagoxrth .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -734,13 +720,13 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_footnote {
+#vrhagoxrth .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#rnyfyynape .gt_sourcenotes {
+#vrhagoxrth .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -754,41 +740,41 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#rnyfyynape .gt_sourcenote {
+#vrhagoxrth .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#rnyfyynape .gt_left {
+#vrhagoxrth .gt_left {
   text-align: left;
 }
 
-#rnyfyynape .gt_center {
+#vrhagoxrth .gt_center {
   text-align: center;
 }
 
-#rnyfyynape .gt_right {
+#vrhagoxrth .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rnyfyynape .gt_font_normal {
+#vrhagoxrth .gt_font_normal {
   font-weight: normal;
 }
 
-#rnyfyynape .gt_font_bold {
+#vrhagoxrth .gt_font_bold {
   font-weight: bold;
 }
 
-#rnyfyynape .gt_font_italic {
+#vrhagoxrth .gt_font_italic {
   font-style: italic;
 }
 
-#rnyfyynape .gt_super {
+#vrhagoxrth .gt_super {
   font-size: 65%;
 }
 
-#rnyfyynape .gt_footnote_marks {
+#vrhagoxrth .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -849,25 +835,16 @@ html {
 ### Changing background colour
 
 ``` r
-gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "goldenrod")
-#> New names:
-#> * strings -> strings...1
-#> * strings -> strings...2
-#> New names:
-#> * strings -> strings...3
-#> New names:
-#> * strings -> strings...4
-#> New names:
-#> * strings -> strings...5
+gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "seagreen")
 ```
 
-<div id="hhvdfcyetj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="gytysohhma" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hhvdfcyetj .gt_table {
+#gytysohhma .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -892,7 +869,7 @@ html {
   border-left-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_heading {
+#gytysohhma .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -904,7 +881,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_title {
+#gytysohhma .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -914,7 +891,7 @@ html {
   border-bottom-width: 0;
 }
 
-#hhvdfcyetj .gt_subtitle {
+#gytysohhma .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -924,13 +901,13 @@ html {
   border-top-width: 0;
 }
 
-#hhvdfcyetj .gt_bottom_border {
+#gytysohhma .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_col_headings {
+#gytysohhma .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -945,7 +922,7 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_col_heading {
+#gytysohhma .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -965,7 +942,7 @@ html {
   overflow-x: hidden;
 }
 
-#hhvdfcyetj .gt_column_spanner_outer {
+#gytysohhma .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -977,15 +954,15 @@ html {
   padding-right: 4px;
 }
 
-#hhvdfcyetj .gt_column_spanner_outer:first-child {
+#gytysohhma .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hhvdfcyetj .gt_column_spanner_outer:last-child {
+#gytysohhma .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hhvdfcyetj .gt_column_spanner {
+#gytysohhma .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -997,7 +974,7 @@ html {
   width: 100%;
 }
 
-#hhvdfcyetj .gt_group_heading {
+#gytysohhma .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1019,7 +996,7 @@ html {
   vertical-align: middle;
 }
 
-#hhvdfcyetj .gt_empty_group_heading {
+#gytysohhma .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1034,15 +1011,15 @@ html {
   vertical-align: middle;
 }
 
-#hhvdfcyetj .gt_from_md > :first-child {
+#gytysohhma .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hhvdfcyetj .gt_from_md > :last-child {
+#gytysohhma .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hhvdfcyetj .gt_row {
+#gytysohhma .gt_row {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 5px;
@@ -1061,7 +1038,7 @@ html {
   overflow-x: hidden;
 }
 
-#hhvdfcyetj .gt_stub {
+#gytysohhma .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1073,7 +1050,7 @@ html {
   padding-left: 12px;
 }
 
-#hhvdfcyetj .gt_summary_row {
+#gytysohhma .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1083,7 +1060,7 @@ html {
   padding-right: 5px;
 }
 
-#hhvdfcyetj .gt_first_summary_row {
+#gytysohhma .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1093,7 +1070,7 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_grand_summary_row {
+#gytysohhma .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1103,7 +1080,7 @@ html {
   padding-right: 5px;
 }
 
-#hhvdfcyetj .gt_first_grand_summary_row {
+#gytysohhma .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1113,11 +1090,11 @@ html {
   border-top-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_striped {
+#gytysohhma .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hhvdfcyetj .gt_table_body {
+#gytysohhma .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1126,7 +1103,7 @@ html {
   border-bottom-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_footnotes {
+#gytysohhma .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1140,13 +1117,13 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_footnote {
+#gytysohhma .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#hhvdfcyetj .gt_sourcenotes {
+#gytysohhma .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1160,41 +1137,41 @@ html {
   border-right-color: #D3D3D3;
 }
 
-#hhvdfcyetj .gt_sourcenote {
+#gytysohhma .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#hhvdfcyetj .gt_left {
+#gytysohhma .gt_left {
   text-align: left;
 }
 
-#hhvdfcyetj .gt_center {
+#gytysohhma .gt_center {
   text-align: center;
 }
 
-#hhvdfcyetj .gt_right {
+#gytysohhma .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hhvdfcyetj .gt_font_normal {
+#gytysohhma .gt_font_normal {
   font-weight: normal;
 }
 
-#hhvdfcyetj .gt_font_bold {
+#gytysohhma .gt_font_bold {
   font-weight: bold;
 }
 
-#hhvdfcyetj .gt_font_italic {
+#gytysohhma .gt_font_italic {
   font-style: italic;
 }
 
-#hhvdfcyetj .gt_super {
+#gytysohhma .gt_super {
   font-size: 65%;
 }
 
-#hhvdfcyetj .gt_footnote_marks {
+#gytysohhma .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -1212,39 +1189,39 @@ html {
   
   <tbody class="gt_table_body">
     <tr><td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Mazda RX4</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Mazda RX4 Wag</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Mazda RX4 Wag</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Datsun 710</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Hornet 4 Drive</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Hornet 4 Drive</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Hornet Sportabout</td></tr>
-    <tr><td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Valiant</td>
+    <tr><td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Valiant</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Duster 360</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 240D</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 240D</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 230</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 280</td></tr>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 280</td></tr>
     <tr><td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 280C</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 450SE</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 450SE</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 450SL</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 450SLC</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Merc 450SLC</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Cadillac Fleetwood</td></tr>
-    <tr><td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Lincoln Continental</td>
+    <tr><td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Lincoln Continental</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Chrysler Imperial</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Fiat 128</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Fiat 128</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Honda Civic</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Toyota Corolla</td></tr>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Toyota Corolla</td></tr>
     <tr><td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Toyota Corona</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Dodge Challenger</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Dodge Challenger</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">AMC Javelin</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Camaro Z28</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Camaro Z28</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Pontiac Firebird</td></tr>
-    <tr><td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Fiat X1-9</td>
+    <tr><td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Fiat X1-9</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Porsche 914-2</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Lotus Europa</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Lotus Europa</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Ford Pantera L</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Ferrari Dino</td></tr>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Ferrari Dino</td></tr>
     <tr><td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Maserati Bora</td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Volvo 142E</td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;">Volvo 142E</td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;"></td>
-<td class="gt_row gt_center" style="background-color: #DAA520; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;"></td>
+<td class="gt_row gt_center" style="background-color: #2E8B57; border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;"></td>
 <td class="gt_row gt_center" style="border-left-width: 1px; border-left-style: solid; border-left-color: white; border-right-width: 1px; border-right-style: solid; border-right-color: white; border-top-width: 1px; border-top-style: solid; border-top-color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white;"></td></tr>
   </tbody>
   
