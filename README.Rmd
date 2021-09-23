@@ -34,28 +34,35 @@ remotes::install_github("rachelannieswain/gridup")
 
 ```{r example}
 library(gridup)
+library(gt)
 
 # Your vector of strings
 cars <- mtcars %>% rownames()
 ```
 
 ### Grid layout
-```{r grid, warning=FALSE, message=FALSE, results='asis'}
-grid_output <- gridup::grid_up(strings = cars, output_type = "grid")
+```{r grid, warning=FALSE, message=FALSE, out.width ="70%"}
+grid_output <- gridup::grid_up(strings = cars, output_type = "grid") %>%
+  gtsave(here::here("images", "grid-output.png"))
 
-gt::as_raw_html(grid_output)
+knitr::include_graphics("images/grid-output.png")
 ```
 
 ### Checkerboard layout
-```{r checkerboard, warning=FALSE, message=FALSE}
-checkerboard_output <- gridup::grid_up(strings = cars, output_type = "checkerboard")
+```{r checkerboard, warning=FALSE, message=FALSE, out.width ="70%"}
+checkerboard_output <- gridup::grid_up(strings = cars, output_type = "checkerboard") %>%
+  gtsave(here::here("images", "check-output.png"))
 
-gt::as_raw_html(checkerboard_output)
+knitr::include_graphics("images/check-output.png")
+
+
 ```
 
 ### Changing background colour
-```{r colours, warning=FALSE, message=FALSE}
-coloured_grid <- gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "gold")
-gt::as_raw_html(coloured_grid)
+```{r colours, warning=FALSE, message=FALSE, out.width ="70%"}
+coloured_grid <- gridup::grid_up(strings = cars, output_type = "checkerboard", bg_colour = "gold") %>%
+  gtsave(here::here("images", "coloured-output.png"))
+
+knitr::include_graphics("images/coloured-output.png")
 ```
 
